@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "azure-react-icons": "^0.10.1",
+    "essaleh.me": "file:",
     "framer-motion": "^11.11.9",
     "next": "15.0.1",
     "react": "^18.3.1",

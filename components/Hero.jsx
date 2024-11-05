@@ -9,7 +9,7 @@ const Hero = () => {
     return (
         <div className='max-w-[60%] mx-auto my-[50px]'>
             <motion.div initial={{ opacity: 0 }} transition={{ duration: 1 }} animate={{opacity: 1, y: -20}} >
-                    <h1 className='md:text-[50px] font-bold text-black dark:text-white'>Hi, I'm <span className='text-[#e93140] font-bold underline'>Yassine Essaleh</span>.</h1>
+                    <h1 className='md:text-[50px] font-bold text-black dark:text-white'>Hi, I&apos;m <span className='text-[#e93140] font-bold underline'>Yassine Essaleh</span>.</h1>
                     
                     <div className='md:text-5xl text-2xl flex font-bold md:pt-4'>
                         <h1 className='text-black dark:text-white'>I&apos;m a </h1>
