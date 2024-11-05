@@ -1,0 +1,15 @@
+Light Mode Colors
+    Background: #f5f5f5 (very light gray) or #ffffff (white)
+    Primary Text: #333333 (dark gray for better readability than pure black)
+    Secondary Text: #666666 (medium gray)
+    Accent: #007acc (muted blue) or #3498db (calm blue)
+    Highlight or Button Background: #e0e0e0 (soft gray)
+
+
+
+Dark Mode Colors
+    Background: #121212 (almost black) or #1e1e1e (dark gray)
+    Primary Text: #e0e0e0 (light gray for readability)
+    Secondary Text: #a0a0a0 (medium gray)
+    Accent: #66d9ef (soft cyan) or #bb86fc (muted purple)
+    Highlight or Button Background: #333333 (dark gray, slightly lighter than background)
