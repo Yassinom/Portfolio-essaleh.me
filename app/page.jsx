@@ -10,7 +10,7 @@ import { createContext, useState } from 'react';
 
 export const ThemeContext = createContext(null);
 
-const page = () => {
+const Page = () => {
   const [darkMode, setDarkMode] = useState(true);
   const toggleDarkMode = () => { setDarkMode(!darkMode); }
 
