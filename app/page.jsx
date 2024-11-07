@@ -1,10 +1,13 @@
 "use client";
 import React from 'react';
+
 import Hero from "@/components/Hero";
 import StarryBackground from "@/components/StarryBackground";
 import NavBar from "@/components/NavBar";
 import Skills from "@/components/Skills";
 import Education from "@/components/Education";
+import Experience from "@/components/Experience";
+
 import { createContext, useState } from 'react';
 
 
@@ -21,6 +24,7 @@ const Page = () => {
         <Hero />
         <NavBar />
         <Skills />
+        <Experience />
         <Education />
       </div>
     </ThemeContext.Provider>

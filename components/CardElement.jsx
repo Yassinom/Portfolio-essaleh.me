@@ -6,7 +6,7 @@ const CardElement = ({ Icon, skillName }) => {
             <div className="mr-2">
                 <Icon className="text-2xl" />
             </div>
-            <h2 className="">{skillName}</h2>
+            <h2>{skillName}</h2>
         </div>
     );
 };
