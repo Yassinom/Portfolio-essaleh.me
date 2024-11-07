@@ -80,7 +80,7 @@ const Cim = () => {
                                         className="flex items-center mb-2"
                                     >
                                         <VscDebugBreakpointData className="mr-2 text-lg" />
-                                        <span>Developing a prototype website to boost CIM's digital presence.</span>
+                                        <span>Developing a prototype website to boost CIM&apos;s digital presence.</span>
                                     </motion.li>
                                     <motion.li
                                         initial={{ opacity: 0 }}
@@ -89,7 +89,7 @@ const Cim = () => {
                                         className="flex items-center"
                                     >
                                         <VscDebugBreakpointData className="mr-2 text-lg" />
-                                        <span>Keeping CIM's PCs updated with the latest software versions and security patches.</span>
+                                        <span>Keeping CIM&apos;s PCs updated with the latest software versions and security patches.</span>
                                     </motion.li>
                                 </ul>
                             </motion.div>
