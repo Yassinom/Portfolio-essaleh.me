@@ -9,6 +9,7 @@ import Education from "@/components/Education";
 import Experience from "@/components/Experience";
 import Social from "@/components/Social";
 import DarkModeToggle from "@/components/DarkModeToggle";
+import Projects from "@/components/Projects";
 
 import { createContext, useState } from 'react';
 
@@ -30,6 +31,7 @@ const Page = () => {
         <Skills />
         <Experience />
         <Education />
+        <Projects />
       </div>
     </ThemeContext.Provider>
   )
