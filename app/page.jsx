@@ -23,8 +23,8 @@ const Page = () => {
   return (
     <ThemeContext.Provider value={{ darkMode, toggleDarkMode }}>
       <div className={`${darkMode && "dark"} font-title`}	>
-         {darkMode ? <StarryBackground /> : <div className="bg-[#f5f5f5] fixed top-0 left-0 w-full h-full z-[-1]" />}
-         <DarkModeToggle />
+        {darkMode ? <StarryBackground /> : <div className="bg-[#f5f5f5] fixed top-0 left-0 w-full h-full z-[-1]" />}
+        <DarkModeToggle />
         <Social />
         <Hero />
         <NavBar />

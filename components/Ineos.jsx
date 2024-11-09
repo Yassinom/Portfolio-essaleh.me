@@ -20,7 +20,7 @@ const Ineos = () => {
 
                         <div className="flex-col w-[70%] px-[1%] pt-1">
                             <div className="text-3xl font-bold">INEOS / CYBERORCES</div>
-                            <div className="text-2xl">Network Security Engineer - Internship</div>
+                            <div className="text-2xl text-gray-700 dark:text-gray-400">Network Security Engineer - Internship</div>
 
                             <div className="flex justify-between items-center mt-[3%]">
                                 <div className="flex items-center px-3 py-2 rounded-[20px] bg-slate-500 bg-opacity-20 shadow-md">

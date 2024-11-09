@@ -19,7 +19,7 @@ const Cim = () => {
 
                         <div className="flex-col w-[70%] px-[1%] pt-1">
                             <div className="text-3xl font-bold">Marrakech Innovation City</div>
-                            <div className="text-2xl">IT Enigneer - Internship</div>
+                            <div className="text-2xl text-gray-700 dark:text-gray-400">IT Enigneer - Internship</div>
 
                             <div className="flex justify-between items-center mt-[3%]">
                                 <div className="flex items-center px-3 py-2 rounded-[20px] bg-slate-500 bg-opacity-20 shadow-md">

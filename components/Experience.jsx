@@ -8,12 +8,12 @@ import Cim from './Cim';
 
 const Experience = () => {
     return (
-        <div id="experience" className="z-[1] max-w-[60%] mx-auto mt-40">
+        <div id="experience" className="md:max-w-[60%] max-w-[90%] mx-auto md:mt-40 mt-20">
             <motion.div initial={{ opacity: 0 }} transition={{ duration: 0.7 }} animate={{ opacity: 1, y: -20 }}>
 
-                <div className="text-[40px] font-bold text-black dark:text-white mb-12">
-                    Experience
-                </div>
+            <div className='text-[40px] font-bold text-black dark:text-white md:mb-12 mb-8'>
+                Skills
+            </div>
 
                 <Ineos />
                 <div className='h-16'></div>

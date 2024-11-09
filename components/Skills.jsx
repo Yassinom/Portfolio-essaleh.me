@@ -24,96 +24,99 @@ import { SlChemistry } from "react-icons/sl";
 
 const Skills = () => {
     return (
-        <div id="skills" className='max-w-[60%] mx-auto mt-20'>
-            <motion.div initial={{ opacity: 0 }} transition={{ duration: 0.7 }} animate={{opacity: 1, y: -20}} >
-                
-                <div className='text-[40px] font-bold text-black dark:text-white mb-12'>
-                    Skills
-                </div>
-
-                <div className="flex flex-wrap gap-[2%]">
-                    <div className="border border-black dark:border-[#404245] w-[49%] border-opacity-0 rounded-3xl py-4 px-4 shadow-md">
-                        <div className="flex items-center text-[1.875rem] ml-[4%] text-black dark:text-white">
-                            <FaShieldAlt className="dark:text-[#f1949d] text-[#e93140] font-bold pr-4 text-[3.5rem]" />
-                            Security
-                        </div>
-                        <div className="flex flex-wrap gap-2 p-[4%]">
-                            <CardElement Icon={SiHackaday} skillName="Penetration Testing" />
-                            <CardElement Icon={IoKeyOutline} skillName="Cryptography" />
-                            <CardElement Icon={FaRedhat} skillName="Ethical Hacking" />
-                            <CardElement Icon={FaMagnifyingGlass} skillName="Forensics" />
-                            <CardElement Icon={VscFilter} skillName="SOC" />
-                            <CardElement Icon={IoHammer} skillName="Systems Hardening" />
-                        </div>
+        <div id="skills" className='md:max-w-[60%] max-w-[90%] mx-auto mt-20'>
+            <motion.div 
+                initial={{ opacity: 0 }} 
+                transition={{ duration: 0.7 }} 
+                animate={{opacity: 1, y: -20}} 
+            >    
+                    <div className='text-[40px] font-bold text-black dark:text-white md:mb-12 mb-8'>
+                        Skills
                     </div>
 
-                    <div className="border border-black dark:border-[#404245] w-[49%] border-opacity-0 rounded-3xl py-4 px-4 shadow-md ">
-                        <div className="flex items-center text-[1.875rem] ml-[4%] text-black dark:text-white">
-                            <CgUndo className="dark:text-[#f1949d] text-[#e93140] font-bold pr-4 text-[3.75rem]" />
-                            DevSecOps
-                        </div>
-                        <div className="flex flex-wrap gap-2 p-[4%]">
-                            <CardElement Icon={CgUndo} skillName="CI/CD Pipelines" />
-                            <CardElement Icon={FaGit } skillName="git" />
-                            <CardElement Icon={FaDocker } skillName="Docker" />
-                            <CardElement Icon={SiKubernetes } skillName="Kubernetes" />
-                            <CardElement Icon={FaJenkins } skillName="Jenkins" />
-                            <CardElement Icon={GrServices} skillName="Microservices" />
+                    <div className="flex flex-wrap gap-[2%]">
 
+                        <div className="border border-black dark:border-[#404245] md:w-[49%] w-[100%] border-opacity-0 rounded-3xl py-4 px-4 shadow-md">
+                            <div className="flex items-center text-[1.875rem] ml-[4%] text-black dark:text-white">
+                                <FaShieldAlt className="dark:text-[#f1949d] text-[#e93140] font-bold pr-4 text-[3.5rem]" />
+                                Security
+                            </div>
+                            <div className="flex flex-wrap gap-2 p-[4%]">
+                                <CardElement Icon={SiHackaday} skillName="Penetration Testing" />
+                                <CardElement Icon={IoKeyOutline} skillName="Cryptography" />
+                                <CardElement Icon={FaRedhat} skillName="Ethical Hacking" />
+                                <CardElement Icon={FaMagnifyingGlass} skillName="Forensics" />
+                                <CardElement Icon={VscFilter} skillName="SOC" />
+                                <CardElement Icon={IoHammer} skillName="Systems Hardening" />
+                            </div>
+                        </div>
+
+                        <div className="border border-black dark:border-[#404245] md:w-[49%] w-[100%] border-opacity-0 rounded-3xl py-4 px-4 shadow-md md:mt-[0%] mt-[2%]">
+                            <div className="flex items-center text-[1.875rem] ml-[4%] text-black dark:text-white">
+                                <CgUndo className="dark:text-[#f1949d] text-[#e93140] font-bold pr-4 text-[3.75rem]" />
+                                DevSecOps
+                            </div>
+                            <div className="flex flex-wrap gap-2 p-[4%]">
+                                <CardElement Icon={CgUndo} skillName="CI/CD Pipelines" />
+                                <CardElement Icon={FaGit } skillName="git" />
+                                <CardElement Icon={FaDocker } skillName="Docker" />
+                                <CardElement Icon={SiKubernetes } skillName="Kubernetes" />
+                                <CardElement Icon={FaJenkins } skillName="Jenkins" />
+                                <CardElement Icon={GrServices} skillName="Microservices" />
+
+                            </div>
+                        </div>
+
+                        <div className="border border-black dark:border-[#404245] md:w-[49%] w-[100%] border-opacity-0 rounded-3xl py-4 px-4 shadow-md mt-[2%]">
+                            <div className="flex items-center text-[1.875rem] ml-[4%] text-black dark:text-white">
+                                <VscCode className="dark:text-[#f1949d] text-[#e93140] font-bold pr-4 text-[3.75rem]" />
+                                Programming
+                            </div>
+                            <div className="flex flex-wrap gap-2 p-[4%]">
+                                <CardElement Icon={BiLogoCPlusPlus } skillName="C/C++" />
+                                <CardElement Icon={FaPython} skillName="Python" />
+                                <CardElement Icon={FaJava } skillName="Java" />
+                                <CardElement Icon={FaPhp } skillName="PHP" />
+                                <CardElement Icon={FaJs } skillName="JavaScript" />
+                                <CardElement Icon={VscTerminalBash } skillName="Bash Scripting" />
+                            </div>
+                        </div>
+
+                        
+
+                        <div className="border border-black dark:border-[#404245] md:w-[49%] w-[100%] border-opacity-0 rounded-3xl py-4 px-4 shadow-md mt-[2%]">
+                            <div className="flex items-center text-[1.875rem] ml-[4%] text-black dark:text-white">
+                                <TbWorldWww className="dark:text-[#f1949d] text-[#e93140] font-bold pr-4 text-[3.5rem]" />
+                                Web Development
+                            </div>
+                            <div className="flex flex-wrap gap-2 p-[4%]">
+                                <CardElement Icon={FaReact } skillName="React JS" />
+                                <CardElement Icon={RiTailwindCssFill} skillName="Tailwind CSS" />
+                                <CardElement Icon={FaJs } skillName="JavaScript" />
+                                <CardElement Icon={SiSpringboot } skillName="Spring Boot" />
+                                <CardElement Icon={FaPhp } skillName="PHP" />
+                                <CardElement Icon={GrMysql } skillName="SQL" />
+                                <CardElement Icon={FaDatabase} skillName="NoSQL" />
+                            </div>
+                        </div>
+
+                        <div className="border border-black dark:border-[#404245] md:w-[60%] w-[100%] border-opacity-0 rounded-3xl py-4 px-4 shadow-md mt-[2%] md:ml-[20%]">
+                            <div className="flex items-center text-[1.875rem] ml-[4%] text-black dark:text-white">
+                                <PiNetworkXDuotone className="dark:text-[#f1949d] text-[#e93140] font-bold pr-4 text-[4.5rem]" />
+                                Cloud, Network & System Administration
+                            </div>
+                            <div className="flex flex-wrap gap-2 p-[4%]">
+                                <CardElement Icon={MdAdminPanelSettings  } skillName="Active Directory" />
+                                <CardElement Icon={FaLinux } skillName="Linux" />
+                                <CardElement Icon={SiWindows  } skillName="Windows Server" />
+                                <CardElement Icon={GrVmware } skillName="VMware ESXI" />
+                                <CardElement Icon={SiOpenstack  } skillName="Open Stack" />
+                                <CardElement Icon={GiChameleonGlyph  } skillName="GNS3" />
+                                <CardElement Icon={SiFortinet  } skillName="FortiGate" />
+                                <CardElement Icon={SlChemistry  } skillName="CloudLab" />
+                            </div>
                         </div>
                     </div>
-
-                    <div className="border border-black dark:border-[#404245] w-[49%] border-opacity-0 rounded-3xl py-4 px-4 shadow-md mt-[2%]">
-                        <div className="flex items-center text-[1.875rem] ml-[4%] text-black dark:text-white">
-                            <VscCode className="dark:text-[#f1949d] text-[#e93140] font-bold pr-4 text-[3.75rem]" />
-                            Programming
-                        </div>
-                        <div className="flex flex-wrap gap-2 p-[4%]">
-                            <CardElement Icon={BiLogoCPlusPlus } skillName="C/C++" />
-                            <CardElement Icon={FaPython} skillName="Python" />
-                            <CardElement Icon={FaJava } skillName="Java" />
-                            <CardElement Icon={FaPhp } skillName="PHP" />
-                            <CardElement Icon={FaJs } skillName="JavaScript" />
-                            <CardElement Icon={VscTerminalBash } skillName="Bash Scripting" />
-                        </div>
-                    </div>
-
-                    
-
-                    <div className="border border-black dark:border-[#404245] w-[49%] border-opacity-0 rounded-3xl py-4 px-4 shadow-md mt-[2%]">
-                        <div className="flex items-center text-[1.875rem] ml-[4%] text-black dark:text-white">
-                            <TbWorldWww className="dark:text-[#f1949d] text-[#e93140] font-bold pr-4 text-[3.5rem]" />
-                            Web Development
-                        </div>
-                        <div className="flex flex-wrap gap-2 p-[4%]">
-                            <CardElement Icon={FaReact } skillName="React JS" />
-                            <CardElement Icon={RiTailwindCssFill} skillName="Tailwind CSS" />
-                            <CardElement Icon={FaJs } skillName="JavaScript" />
-                            <CardElement Icon={SiSpringboot } skillName="Spring Boot" />
-                            <CardElement Icon={FaPhp } skillName="PHP" />
-                            <CardElement Icon={GrMysql } skillName="SQL" />
-                            <CardElement Icon={FaDatabase} skillName="NoSQL" />
-                        </div>
-                    </div>
-
-                    <div className="border border-black dark:border-[#404245] w-[60%] border-opacity-0 rounded-3xl py-4 px-4 shadow-md mt-[2%] ml-[20%]">
-                        <div className="flex items-center text-[1.875rem] ml-[4%] text-black dark:text-white">
-                            <PiNetworkXDuotone className="dark:text-[#f1949d] text-[#e93140] font-bold pr-4 text-[4.5rem]" />
-                            Cloud, Network & System Administration
-                        </div>
-                        <div className="flex flex-wrap gap-2 p-[4%]">
-                            <CardElement Icon={MdAdminPanelSettings  } skillName="Active Directory" />
-                            <CardElement Icon={FaLinux } skillName="Linux" />
-                            <CardElement Icon={SiWindows  } skillName="Windows Server" />
-                            <CardElement Icon={GrVmware } skillName="VMware ESXI" />
-                            <CardElement Icon={SiOpenstack  } skillName="Open Stack" />
-                            <CardElement Icon={GiChameleonGlyph  } skillName="GNS3" />
-                            <CardElement Icon={SiFortinet  } skillName="FortiGate" />
-                            <CardElement Icon={SlChemistry  } skillName="CloudLab" />
-                        </div>
-                    </div>
-                </div>
-
             </motion.div>
         </div>
     )

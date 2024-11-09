@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 
 import { motion } from "framer-motion";
-import { FaCalendarAlt } from "react-icons/fa";
-import { FaLocationDot } from "react-icons/fa6";
 import { IoIosArrowDropdown } from "react-icons/io";
-import gatosocimg from "../images/GatoSOC.png";
+
+import CardElement from "@/components/CardElement";
+import ProjectElement from "@/components/ProjectElement";
 
 const GatoSOC = () => {
   const [rotated, setRotated] = useState(false);
@@ -20,36 +20,42 @@ const GatoSOC = () => {
       {/* Trigger Button */}
       <div className={`rounded-[30px] p-4 bg-slate-500 bg-opacity-20 shadow-md text-black dark:text-white`}>
                     <div className="flex">
-                        <div className="w-1/3 mr-4 p-4 rounded-[30px] bg-[#8997ab] dark:bg-[#323c4a] bg-opacity-60 flex flex-col justify-center hover:cursor-pointer" onClick={toggleModal}>
-                            <img src="../GatoSOC.png" alt="GatoSOC" />
+                        <div className="w-1/3 mr-4 rounded-[30px] bg-[#8997ab] dark:bg-[#323c4a] bg-opacity-60 flex flex-col justify-center hover:cursor-pointer" onClick={toggleModal}>
+                            <img src="/images/GatoSOC.png" alt="GatoSOC" className="rounded-[30px]" />
                         </div>
 
 
-                        <div className="flex-col w-[70%] px-[1%] pt-1">
-                            <div className="text-3xl font-bold">GatoSOC</div>
-                            <div className="text-2xl">Network Security Engineer - Internship</div>
+                        <div className="flex flex-col w-[70%] px-[1%] pt-1 justify-between">
+
+                            <div>
+                                <div className="mb-3 flex justify-between max-w-[99%] items-center">
+                                <div className="text-3xl font-bold">GatoSOC</div>
+                                <div className="text-lg text-gray-700 dark:text-gray-400">2024</div>
+                              </div> 
+                              <div className="text-xl text-gray-700 dark:text-gray-400">
+                                A Next-Gen SOC stack solution crafted to enhance threat detection and response capabilities, leveraging Wazuh, Grafana, Graylog, MISP and TheHive.
+                              </div>
+                            </div>
 
                             <div className="flex justify-between items-center mt-[3%]">
-                                <div className="flex items-center px-3 py-2 rounded-[20px] bg-slate-500 bg-opacity-20 shadow-md">
-                                    <FaCalendarAlt className="text-[20px] mr-3 dark:text-[#f1949d]" />
-                                    <div className="text-[16px]">July 2024 - September 2024</div>
-                                </div>
 
-                                <div className="flex items-center px-3 py-2 rounded-[20px] bg-slate-500 bg-opacity-20 shadow-md">
-                                    <FaLocationDot className="text-[23px] mr-3 dark:text-[#f1949d]" />
-                                    <div className="text-[16px]">Casablanca, Morocco</div>
-                                </div>
+                              <div className="flex flex-wrap">
+                                <ProjectElement skillName="Wazuh"/>
+                                <ProjectElement skillName="Grafana"/>
+                                <ProjectElement skillName="Graylog"/>
+                                <ProjectElement skillName="MISP"/>
+                                <ProjectElement skillName="TheHive"/>
+                              </div>
 
-                                <div onClick={rotateArrow}>
-                                    <IoIosArrowDropdown
-                                        className='text-[40px] hover:bg-slate-400 hover:bg-opacity-30 rounded-full hover:cursor-pointer transition-all duration-300 rotate-[-90deg]'
-                                        onClick={toggleModal}
-                                    />
-                                </div>
+                              <IoIosArrowDropdown
+                                  className='text-[40px] hover:bg-slate-400 hover:bg-opacity-30 rounded-full hover:cursor-pointer transition-all duration-300 rotate-[-90deg]'
+                                  onClick={toggleModal}
+                              />
                             </div>
                         </div>
                     </div>
                 </div>
+              
                 
 
 
@@ -72,30 +78,63 @@ const GatoSOC = () => {
 
       {/* Modal and Background Blur */}
       {isModalOpen && (
-        <div className="fixed inset-0 flex items-center justify-center z-10">
-          {/* Background Blur */}
-          <div
-            className="absolute inset-0 bg-black bg-opacity-40 backdrop-blur-md"
-            onClick={toggleModal}
-          ></div>
+          <div className="fixed inset-0 flex items-center justify-center z-10">
 
-          {/* Modal Content with Framer Motion */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.95 }}
-            animate={{ opacity: 1, scale: 1 }}        
-            transition={{ duration: 0.3 }}
-            className="relative bg-gray-600 rounded-lg shadow-lg p-6 z-20 w-3/4 max-w-lg"
-          >
-            <h2 className="text-xl font-semibold mb-4">Modal Title</h2>
-            <p className="mb-4">This is the content inside the modal.</p>
-            <button
-              onClick={toggleModal}
-              className="px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600"
-            >
-              Close Modal
-            </button>
-          </motion.div>
-        </div>
+            {/* Background Blur */}
+              <div
+                className="absolute inset-0 bg-black bg-opacity-40 backdrop-blur-md"
+                onClick={toggleModal}
+              >
+              </div>
+
+              {/* Modal Content with Framer Motion */}
+              <motion.div
+                initial={{ opacity: 0, scale: 0.95 }}
+                animate={{ opacity: 1, scale: 1 }}              //text-[#1d1e1f]
+                transition={{ duration: 0.3 }}
+                className="bg-[#2f3641] bg-opacity-75 rounded-[30px] shadow-[30px] p-6 z-20 max-w-[90%] md:max-w-[60%] w-full h-[90%] overflow-y-auto"
+              >
+
+                  <div 
+                    className="flex items-center justify-between md:w-[23%] w-[65%] rounded-[30px] px-2 py-1 bg-opacity-60 cursor-pointer hover:bg-[#c2c3c4] hover:bg-opacity-30 transition-all duration-200"
+                    onClick={toggleModal}
+                    >
+                      <IoIosArrowDropdown className="rotate-[90deg] md:text-3xl text-lg text-[#9f9fa0]"/>
+                      <h2 className="md:text-xl text-md font-semibold text-[#9f9fa0]">Go back to projects</h2>
+                  </div>
+                  
+                  <div className=" text-center text-[40px] font-bold mt-5">GatoSOC</div>
+                  <div className="text-[20px] text-[#9f9fa0] text-center">Next-generation security operations, open-source and free for everyone</div>
+                  <img 
+                    src="/images/GatoSOC.png" 
+                    alt="GatoSOC" 
+                    height={100} 
+                    className="rounded-[30px] mx-auto mt-5 md:max-w-[80%] max-w-[100%]"  
+                  />
+
+                  <div className="flex md:flex-row flex-col mt-14">
+                      <div className="md:w-2/3 w-[100%] px-3 py-2 rounded-[20px] hover:bg-[#919292] hover:bg-opacity-30 transition-all duration-200 mr-2">
+                          <div className="text-[30px] font-bold ">Overview</div>
+                          <div className="text-[20px] text-[#9f9fa0]">
+                            This Next-Gen Security Operations Center aims to strengthen an organization's cybersecurity framework by offering real-time monitoring and incident response functionalities. This all-encompassing platform combines multiple open-source tools to deliver effective security monitoring and threat management solutions.
+                          </div>
+                      </div>
+
+                      <div className="md:w-1/3 w-[100%] px-3 py-2 rounded-[20px]">
+                          <div className="text-[30px] font-bold mb-2">Technologies Used</div>
+                          <div className="flex flex-wrap gap-2">
+                            <ProjectElement skillName="Wazuh"/>
+                            <ProjectElement skillName="Grafana"/>
+                            <ProjectElement skillName="Graylog"/>
+                            <ProjectElement skillName="MISP"/>
+                            <ProjectElement skillName="TheHive"/>
+                          </div>
+                      </div>
+                  </div>
+
+                 
+              </motion.div>
+          </div>
       )}
     </div>
   );

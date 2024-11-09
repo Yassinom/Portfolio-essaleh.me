@@ -27,7 +27,7 @@ const Education = () => {
 
                 <div className='flex-col w-[70%]  px-[1%] pt-1 '>
                     <div className='text-2xl font-bold'>Cadi Ayyad University, Marrakech, Morocco</div>
-                    <div className='text-2xl font-bold'>National School of Applied Sciences of Marrakech</div>
+                    <div className='text-2xl font-bold text-gray-700 dark:text-gray-400'>National School of Applied Sciences of Marrakech</div>
 
                     <div className='flex justify-between mt-[3%] '>
                         <div className='flex flex-col items-center py-2 rounded-[20px] bg-slate-500 bg-opacity-20 shadow-md px-3'>
@@ -35,10 +35,10 @@ const Education = () => {
                             <div className='text-xl pt-6'>2020 - 2025</div>
                         </div>
 
-                        <div className='flex flex-col items-center py-2 rounded-[20px] bg-slate-500 bg-opacity-20 shadow-md px-3'>
+                        <div className='flex flex-col items-center py-2 rounded-[20px] bg-slate-500 bg-opacity-20 shadow-md px-3 mx-2'>
                             <BsFillMortarboardFill className='text-[40px] dark:text-[#f1949d]'/>
                             <div className='text-xl'>Engineering degree</div>
-                            <div className='text-xl'>Cyber Defense and Embedded Telecommunications Systems</div>
+                            <div className='text-[18px]'>Cyber Defense and Embedded Telecommunications Systems</div>
                         </div>
                     </div>
                     
