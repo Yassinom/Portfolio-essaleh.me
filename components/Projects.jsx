@@ -13,8 +13,8 @@ const Projects = () => {
   return (
     <>
         <motion.div 
-          id='projetcs' 
-          className='text-[40px] font-bold text-black dark:text-white mb-8 max-w-[60%] mx-auto mt-36'
+          id='projects' 
+          className='text-[40px] font-bold text-black dark:text-white mb-1 md:max-w-[60%] max-w-[90%] mx-auto mt-[100px]'
           initial={{ opacity: 0 }} 
           transition={{ duration: 0.7 }} 
           animate={{opacity: 1, y: -20}}     

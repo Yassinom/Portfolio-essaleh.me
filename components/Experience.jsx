@@ -12,7 +12,7 @@ const Experience = () => {
             <motion.div initial={{ opacity: 0 }} transition={{ duration: 0.7 }} animate={{ opacity: 1, y: -20 }}>
 
             <div className='text-[40px] font-bold text-black dark:text-white md:mb-12 mb-8'>
-                Skills
+                Experience
             </div>
 
                 <Ineos />
