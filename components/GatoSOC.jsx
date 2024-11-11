@@ -156,11 +156,11 @@ const GatoSOC = () => {
                         </div>
                         <div className="flex items-center">
                           <VscDebugBreakpointData className="text-[25px] mr-2"/> 
-                          End-to-end threat intelligence and alerting with TheHive's SOAR capabilities
+                          End-to-end threat intelligence and alerting with TheHive&apos;s SOAR capabilities
                         </div>
                         <div className="flex items-center">
                           <VscDebugBreakpointData className="text-[25px] mr-2"/> 
-                          Enriched threat intelligence and alerting via TheHive's SOAR capabilities and VirusTotal
+                          Enriched threat intelligence and alerting via TheHive&apos;s SOAR capabilities and VirusTotal
                         </div>
                       </div>
                     </div>
@@ -226,7 +226,7 @@ const GatoSOC = () => {
                         </div>
                         <div className="flex items-center">
                           <VscDebugBreakpointData className="text-[40px] mr-2"/> 
-                          Use of Graylog's plugins and content packs from its community marketplace, with over 8,000 members, addressed community support and extensibility needs.
+                          Use of Graylog&apos;s plugins and content packs from its community marketplace, with over 8,000 members, addressed community support and extensibility needs.
                         </div>
                         <div className="flex items-center">
                           <VscDebugBreakpointData className="text-[25px] mr-2"/> 
