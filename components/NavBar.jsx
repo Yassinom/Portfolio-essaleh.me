@@ -23,7 +23,7 @@ const NavBar = () => {
                 <div className='flex items-center bg-slate-500 bg-opacity-20 md:ml-4  md:py-2 py-1 md:px-4 px-2 rounded-[60px] font-bold text-black dark:text-white cursor-pointer'>
                     <h1 className='text-2xl hidden md:inline'>RESUME</h1>
                     <h1 className="inline md:hidden">CV</h1>
-                    <a href="https://drive.google.com/file/d/1sonHs8NLf1NCoK8w2tzIJh-NSCKR6t9D/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
+                    <a href="https://drive.google.com/file/d/1why6K_0fNvK_bcborPUWfah9yFe1HzZc/view" target="_blank" rel="noopener noreferrer">
 
                         <FaExternalLinkAlt className='ml-2 md:text-[18px] text-[13px] hover:text-[#e93140]' />
                     </a>

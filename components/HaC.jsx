@@ -6,14 +6,14 @@ import { IoIosArrowDropdown } from "react-icons/io";
 import ProjectElement from "@/components/ProjectElement";
 import { VscDebugBreakpointData } from "react-icons/vsc";
 
-import Carousel from "@/components/Carousel";
+import CarouselHaC from "@/components/CarouselHac";
 
 
 
 
 
 
-const GatoSOC = () => {
+const HaC = () => {
   const [rotated, setRotated] = useState(false);
   const rotateArrow = () => { setRotated(!rotated); };
 
@@ -32,11 +32,11 @@ const GatoSOC = () => {
       <div className='rounded-[30px] p-4 bg-slate-500 bg-opacity-20 shadow-md text-black dark:text-white'>
                     <div className="flex md:flex-row flex-col">
                       <div className="md:hidden flex justify-between max-w-[99%] items-center mb-2 mt-1">
-                        <div className="text-3xl font-bold">sGatoSOC</div>
+                        <div className="text-3xl font-bold">Hardening as a Code</div>
                         <div className="text-lg text-gray-700 dark:text-gray-400">2024</div>
                       </div>
                         <div className="md:w-1/3 w-fullmr-4 rounded-[30px] bg-[#8997ab] dark:bg-[#323c4a] bg-opacity-60 flex flex-col justify-center hover:cursor-pointer" onClick={toggleModal}>
-                            <img src="/images/GatoSOC.png" alt="GatoSOC" className="rounded-[30px]" />
+                            <img src="/images/HaC.png" alt="GatoSOC" className="rounded-[30px]" />
                         </div>
 
 
@@ -44,22 +44,20 @@ const GatoSOC = () => {
 
                             <div>
                                 <div className="mb-3 flex justify-between max-w-[99%] items-center">
-                                <div className="md:inline hidden text-3xl font-bold">GatoSOC</div>
+                                <div className="md:inline hidden text-3xl font-bold">Hardening as a Code</div>
                                 <div className="md:inline hidden text-lg text-gray-700 dark:text-gray-400">2024</div>
                               </div> 
                               <div className="md:text-xl text-[17px] text-gray-700 dark:text-gray-400 ">
-                                A Next-Gen SOC stack solution crafted to enhance threat detection and response capabilities, leveraging Wazuh, Grafana, Graylog, MISP and TheHive.
+                                A shell script that hardens Unix systems mainly Debian and Ubuntu based systems following the ANSSI recommendations.
                               </div>
                             </div>
 
                             <div className="flex justify-between items-center mt-[3%]">
 
                               <div className="flex flex-wrap md:gap-2 gap-1">
-                                <ProjectElement skillName="Wazuh"/>
-                                <ProjectElement skillName="Grafana"/>
-                                <ProjectElement skillName="Graylog"/>
-                                <ProjectElement skillName="MISP"/>
-                                <ProjectElement skillName="TheHive"/>
+                                <ProjectElement skillName="Bash / Shell scripting"/>
+                                <ProjectElement skillName="Linux"/>
+                                <ProjectElement skillName="GRUB"/>
                               </div>
 
                               <IoIosArrowDropdown
@@ -99,10 +97,10 @@ const GatoSOC = () => {
                       <h2 className="md:text-xl text-md font-semibold text-[#9f9fa0]">Go back to projects</h2>
                   </div>
                   
-                  <div className=" text-center text-[40px] font-bold mt-5">GatoSOC</div>
-                  <div className="md:text-[20px] text-[15px] text-[#9f9fa0] text-center">Next-generation security operations, open-source and free for everyone</div>
+                  <div className=" text-center text-[40px] font-bold mt-5">Hardening as a Code</div>
+                  <div className="md:text-[20px] text-[15px] text-[#9f9fa0] text-center">A shell script to harden Unix systems following <a href="https://cyber.gouv.fr/sites/default/files/2018/10/guide_anssi_secure_admin_is_pa_022_en_v2.pdf" target="_blank" className="underline cursor-pointer hover:text-white transition-all duration-200">ANSSI v2</a>  recommendations.</div>
                   <img 
-                    src="/images/GatoSOC.png" 
+                    src="/images/HaC.png" 
                     alt="GatoSOC" 
                     height={100} 
                     className="rounded-[30px] mx-auto mt-5 md:max-w-[85%] max-w-[100%]"  
@@ -112,25 +110,22 @@ const GatoSOC = () => {
                       <div className="md:w-2/3 w-[100%] px-3 rounded-[20px] hover:bg-[#919292] hover:bg-opacity-30 transition-all duration-200 mr-2 pb-1">
                           <div className="text-[30px] font-bold ">Overview</div>
                           <div className="md:text-[21px] text-[15px] text-[#9f9fa0]">
-                            This Next-Gen Security Operations Center aims to strengthen an organization&apos;s cybersecurity framework by offering real-time monitoring and incident response functionalities. This all-encompassing platform combines multiple open-source tools to deliver effective security monitoring and threat management solutions.
+                             This script enhances Unix system security per ANSSI v2 guidelines by hardening GRUB for boot security, adjusting kernel and network settings to mitigate threats, restricting unnecessary services to reduce attack surfaces, and enforcing stricter access controls to limit unauthorized access. Together, these measures strengthen system integrity on Debian and Ubuntu-based systems.                          
                           </div>
                       </div>
 
                       <div className="md:w-1/3 w-[100%] px-3 md:pt-0 pt-9 rounded-[20px]">
                           <div className="text-[30px] font-bold mb-2">Technologies Used</div>
                           <div className="flex flex-wrap gap-2">
-                            <ProjectElement skillName="Wazuh"/>
-                            <ProjectElement skillName="Grafana"/>
-                            <ProjectElement skillName="Graylog"/>
-                            <ProjectElement skillName="MISP"/>
-                            <ProjectElement skillName="TheHive"/>
-                            <ProjectElement skillName="CloudLab"/>
-                            <ProjectElement skillName="Suricata"/>
-                            <ProjectElement skillName="VirusTotal "/>
-                            <ProjectElement skillName="Yara"/>
-                            <ProjectElement skillName="Sysmon"/>
-                            <ProjectElement skillName="PacketBeat"/>
-                            <ProjectElement skillName="ELK Stack"/>
+                            <ProjectElement skillName="Bash / Shell scripting"/>
+                            <ProjectElement skillName="Linux"/>
+                            <ProjectElement skillName="GRUB"/>
+                            <ProjectElement skillName="Whiptail"/>
+                            <ProjectElement skillName="Sysctl"/>
+                            <ProjectElement skillName="Yama LSM"/>
+                            <ProjectElement skillName="Network Configuration"/>
+                            <ProjectElement skillName="File System Configuration "/>
+                            <ProjectElement skillName="Backup Mechanism"/>
                           </div>
                       </div>
                   </div>
@@ -141,27 +136,27 @@ const GatoSOC = () => {
                       <div className="md:text-[19px] text-[15px] text-[#9f9fa0] space-y-2">
                         <div className="flex items-center">
                           <VscDebugBreakpointData className="text-[25px] mr-2"/> 
-                          Real-time log collection, analysis, and threat detection using Wazuh, Graylog, and ELK Stack
+                          Root Privileges: Ensures the script runs as root.
                         </div>
                         <div className="flex items-center">
                           <VscDebugBreakpointData className="text-[25px] mr-2"/> 
-                          Automated incident management and response using TheHive, Cortex, and VirusTotal
+                          GRUB Password: Sets a password for GRUB to secure boot.
                         </div>
                         <div className="flex items-center">
                           <VscDebugBreakpointData className="text-[25px] mr-2"/> 
-                          Centralized security data visualization through Grafana and Kibana
+                          Memory Settings: Enables IOMMU for better security and performance.
                         </div>
                         <div className="flex items-center">
                           <VscDebugBreakpointData className="text-[25px] mr-2"/> 
-                          Scalable log ingestion and processing for high-volume security data analysis
+                          Kernel Security: Restricts module loading and configures kernel settings.
                         </div>
                         <div className="flex items-center">
                           <VscDebugBreakpointData className="text-[25px] mr-2"/> 
-                          End-to-end threat intelligence and alerting with TheHive&apos;s SOAR capabilities
+                          IPv4 Settings: Disables unnecessary network features to reduce risks.
                         </div>
                         <div className="flex items-center">
                           <VscDebugBreakpointData className="text-[25px] mr-2"/> 
-                          Enriched threat intelligence and alerting via TheHive&apos;s SOAR capabilities and VirusTotal
+                          File System Security: Restricts file system access to improve security.
                         </div>
                       </div>
                     </div>
@@ -180,7 +175,7 @@ const GatoSOC = () => {
                           <div className="flex justify-between md:text-[21px] text-[16px] text-white border-b border-[#414a58] pb-2 mt-4">
                             Date
                             <div className="flex flex-col md:text-[21px] text-[15px] text-[#9f9fa0]">
-                              <div className="hover:text-white transition-all duration-200" >April 2024 - June 2024</div>
+                              <div className="hover:text-white transition-all duration-200" >April 2024</div>
                               
                             </div> 
                           </div>
@@ -194,9 +189,9 @@ const GatoSOC = () => {
                           </div>
 
                           <div className="flex justify-between md:text-[21px] text-[16px] text-white  mt-4">
-                            Report
+                            Git Repository
                             <div className="flex flex-col md:text-[21px] text-[15px] text-[#9f9fa0]">
-                              <div className="hover:text-white transition-all duration-200 cursor-pointer underline" onClick={() => window.open('/projects/GatoSOC.pdf', '_blank')}>GatoSOC</div>   
+                              <div className="hover:text-white transition-all duration-200 cursor-pointer underline" onClick={() => window.open('https://github.com/SMBullet/Unix-Hardening-Script', '_blank')}>Unix Hac</div>   
                             </div> 
                           </div>
 
@@ -210,28 +205,24 @@ const GatoSOC = () => {
                       <div className="md:text-[30px] text-[27px] font-bold mb-2">Addressed Challenges</div>
                       <div className="md:text-[19px] text-[15px] text-[#9f9fa0] space-y-2">
                         <div className="flex items-center">
-                          <VscDebugBreakpointData className="text-[25px] mr-2"/> 
-                          Regulatory compliance requirements fulfilled by Wazuh for PCI DSS, HIPAA, and GDPR.
+                          <VscDebugBreakpointData className="text-[40px] mr-2"/> 
+                          Backup Files: Backup at least 10% of configuration files before changes to ensure reversibility.
                         </div>
                         <div className="flex items-center">
-                          <VscDebugBreakpointData className="text-[25px] mr-2"/> 
-                          Incident response delays reduced with SOAR for automated responses.
+                          <VscDebugBreakpointData className="text-[50px] mr-2"/> 
+                          Error Handling: Check exit statuses of commands like update-grub, sysctl -p in 100% of cases to reduce failure rates by 30%.
+                        </div>
+                        <div className="flex items-center">
+                          <VscDebugBreakpointData className="text-[45px] mr-2"/> 
+                          GRUB Password Handling: Double-check syntax in &apos;/etc/default/grub&apos; to reduce configuration errors by 15%.
+                        </div>
+                        <div className="flex items-center">
+                          <VscDebugBreakpointData className="text-[50px] mr-2"/> 
+                          User Confirmation: Provide a summary of changes at the start, increasing user confidence by 25% and reducing mistakes by 18%.
                         </div>
                         <div className="flex items-center">
                           <VscDebugBreakpointData className="text-[40px] mr-2"/> 
-                          Inefficient log visualization improved by integrating Graylog with Elasticsearch/OpenSearch for centralized management.
-                        </div>
-                        <div className="flex items-center">
-                          <VscDebugBreakpointData className="text-[25px] mr-2"/> 
-                          Inconsistent log formats standardized with Graylog Extended Log Format (GELF).
-                        </div>
-                        <div className="flex items-center">
-                          <VscDebugBreakpointData className="text-[40px] mr-2"/> 
-                          Use of Graylog&apos;s plugins and content packs from its community marketplace, with over 8,000 members, addressed community support and extensibility needs.
-                        </div>
-                        <div className="flex items-center">
-                          <VscDebugBreakpointData className="text-[25px] mr-2"/> 
-                          Achieved a satisfaction level of 8/10, reflecting how well our goals were accomplished.
+                          Additional Settings: Inform the user that 20% of changes may require a reboot or recompile for full effect.
                         </div>
                       </div>
                     </div>
@@ -239,7 +230,7 @@ const GatoSOC = () => {
                     <div className="md:w-1/2 w-[100%] px-3 md:pt-0 pt-9 rounded-[20px]">
                           <div className="text-[30px] font-bold mb-2">Gallery</div>
                           <div className="h-[90%] flex items-center">
-                            <Carousel />
+                            <CarouselHaC />
                           </div>
 
                           
@@ -257,4 +248,4 @@ const GatoSOC = () => {
   );
 }
 
-export default GatoSOC;
+export default HaC;

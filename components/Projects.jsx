@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { motion } from 'framer-motion';
 
 import GatoSOC from "@/components/GatoSOC";
+import HaC from "@/components/HaC";
 
 const Projects = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -23,6 +24,8 @@ const Projects = () => {
         </motion.div>
            
         <GatoSOC />
+        <div className="h-20"></div>
+        <HaC />
         <div className="h-[100px]"></div>
     </>
   );

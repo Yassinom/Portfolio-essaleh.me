@@ -10,6 +10,7 @@ import Experience from "@/components/Experience";
 import Social from "@/components/Social";
 import DarkModeToggle from "@/components/DarkModeToggle";
 import Projects from "@/components/Projects";
+import HaC from "@/components/HaC";
 
 import { createContext, useState } from 'react';
 
@@ -32,6 +33,8 @@ const Page = () => {
         <Experience />
         <Education />
         <Projects />
+        
+        
       </div>
     </ThemeContext.Provider>
   )
