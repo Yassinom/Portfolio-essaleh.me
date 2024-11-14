@@ -13,6 +13,7 @@ import DarkModeToggle from "@/components/DarkModeToggle";
 import Projects from "@/components/Projects";
 import Volunteering from '@/components/Volunteering';
 import Footer from '@/components/Footer';
+import ScrollToTop from '@/components/ScrollToTop';
 
 
 export const ThemeContext = createContext(null);
@@ -25,6 +26,7 @@ const Page = () => {
     <ThemeContext.Provider value={{ darkMode, toggleDarkMode }}>
       <div className={`${darkMode && "dark"} font-title`}	>
         {darkMode ? <StarryBackground /> : <div className="bg-[#f5f5f5] fixed top-0 left-0 w-full h-full z-[-1]" />}
+        <ScrollToTop /> 
         <DarkModeToggle />
         <Social />
         <Hero />
