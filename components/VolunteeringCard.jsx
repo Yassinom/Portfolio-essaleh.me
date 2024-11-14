@@ -16,9 +16,9 @@ const TestimonialCard = ({ imageSrc, quote, authorName, authorCompany, showLinke
         </div>
 
         {/* Content container */}
-        <div className="relative flex ">
+        <div className="relative flex">
           {/* Image */}
-          <div className="w-3/4" >
+          <div className="w-full " >
             <div className="relative h-[500px] bg-transparent">
               <img
                 src={imageSrc}
@@ -29,22 +29,22 @@ const TestimonialCard = ({ imageSrc, quote, authorName, authorCompany, showLinke
           </div>
 
           {/* Quote box */}
-          <div className="absolute bottom-0 right-0 w-2/3 transform translate-x-4 ">
+          <div className="absolute bottom-0 right-0 md:w-2/3 w-[80%] transform translate-x-4 ">
             {/* Content */}
-            <div className="dark:bg-indigo-900 bg-[#49478b] p-8 text-white rounded-md">
-              <p className="mb-6 text-lg text-gray-400">{quote}</p>
+            <div className="dark:bg-indigo-900 bg-[#49478b] md:p-8 px-6 py-2 text-white rounded-md">
+              <p className="mb-6 md:text-lg text-sm text-gray-400">{quote}</p>
 
               {/* Author info */}
               <div>
-                <h4 className="font-semibold text-xl mb-1">{authorName}</h4>
+                <h4 className="font-semibold md:text-xl mb-1">{authorName}</h4>
                 <p className="flex justify-between items-center text-indigo-300">
-                  <div className="flex items-center gap-1">
-                    <IoLocationOutline />
+                  <div className="flex items-center gap-1 md:text-[16px] text-sm">
+                    <IoLocationOutline className="text-xl flex-shrink-0"/>
                     {authorCompany}
                   </div>
                   {showLinkedinIcon && linkedinUrl && (
                     <CiLinkedin
-                      className="flex-shrink-0 text-3xl opacity-70 hover:opacity-100 cursor-pointer"
+                      className="flex-shrink-0 md:text-3xl text-2xl opacity-70 hover:opacity-100 cursor-pointer"
                       onClick={() => window.open(linkedinUrl, "_blank")}
                     />
                   )}

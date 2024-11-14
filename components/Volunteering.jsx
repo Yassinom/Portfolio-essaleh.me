@@ -28,6 +28,7 @@ const Volunteering = () => {
                         showLinkedinIcon={true}
                         linkedinUrl="https://www.linkedin.com/feed/update/urn:li:activity:7193672594653413376/"
                     />
+                    <br />
 
                     <div className='h-[15%]'></div>
                     
