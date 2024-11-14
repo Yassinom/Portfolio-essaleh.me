@@ -49,7 +49,7 @@ const Footer = () => {
                                 <AiOutlineWhatsApp />
                             </a>
 
-                            <a href='https://wa.me/212621668024' 
+                            <a href='https://www.instagram.com/essalehyassine/' 
                             target='_blank' 
                             rel='noopener noreferrer' 
                             className='text-gray-600 dark:text-gray-400 hover:text-blue-500 dark:hover:text-blue-400 transition-all duration-100 text-3xl flex-shrink-0'>
