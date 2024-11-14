@@ -32,7 +32,7 @@ const HaC = () => {
       <div className='rounded-[30px] p-4 bg-slate-500 bg-opacity-20 shadow-md text-black dark:text-white'>
                     <div className="flex md:flex-row flex-col">
                       <div className="md:hidden flex justify-between max-w-[99%] items-center mb-2 mt-1">
-                        <div className="text-3xl font-bold">Hardening as a Code</div>
+                        <div className="text-3xl font-bold">Unix Hardening as a Code</div>
                         <div className="text-lg text-gray-700 dark:text-gray-400">2024</div>
                       </div>
                         <div className="md:w-1/3 w-fullmr-4 rounded-[30px] bg-[#8997ab] dark:bg-[#323c4a] bg-opacity-60 flex flex-col justify-center hover:cursor-pointer" onClick={toggleModal}>
@@ -44,7 +44,7 @@ const HaC = () => {
 
                             <div>
                                 <div className="mb-3 flex justify-between max-w-[99%] items-center">
-                                <div className="md:inline hidden text-3xl font-bold">Hardening as a Code</div>
+                                <div className="md:inline hidden text-3xl font-bold">Unix Hardening as a Code</div>
                                 <div className="md:inline hidden text-lg text-gray-700 dark:text-gray-400">2024</div>
                               </div> 
                               <div className="md:text-xl text-[17px] text-gray-700 dark:text-gray-400 ">
@@ -205,23 +205,23 @@ const HaC = () => {
                       <div className="md:text-[30px] text-[27px] font-bold mb-2">Addressed Challenges</div>
                       <div className="md:text-[19px] text-[15px] text-[#9f9fa0] space-y-2">
                         <div className="flex items-center">
-                          <VscDebugBreakpointData className="text-[40px] mr-2"/> 
+                          <VscDebugBreakpointData className="text-[20px] mr-2 flex-shrink-0"/> 
                           Backup Files: Backup at least 10% of configuration files before changes to ensure reversibility.
                         </div>
                         <div className="flex items-center">
-                          <VscDebugBreakpointData className="text-[50px] mr-2"/> 
+                          <VscDebugBreakpointData className="text-[20px] mr-2 flex-shrink-0"/> 
                           Error Handling: Check exit statuses of commands like update-grub, sysctl -p in 100% of cases to reduce failure rates by 30%.
                         </div>
                         <div className="flex items-center">
-                          <VscDebugBreakpointData className="text-[45px] mr-2"/> 
+                          <VscDebugBreakpointData className="text-[20px] mr-2 flex-shrink-0"/> 
                           GRUB Password Handling: Double-check syntax in &apos;/etc/default/grub&apos; to reduce configuration errors by 15%.
                         </div>
                         <div className="flex items-center">
-                          <VscDebugBreakpointData className="text-[50px] mr-2"/> 
+                          <VscDebugBreakpointData className="text-[20px] mr-2 flex-shrink-0"/> 
                           User Confirmation: Provide a summary of changes at the start, increasing user confidence by 25% and reducing mistakes by 18%.
                         </div>
                         <div className="flex items-center">
-                          <VscDebugBreakpointData className="text-[40px] mr-2"/> 
+                          <VscDebugBreakpointData className="text-[20px] mr-2 flex-shrink-0"/> 
                           Additional Settings: Inform the user that 20% of changes may require a reboot or recompile for full effect.
                         </div>
                       </div>

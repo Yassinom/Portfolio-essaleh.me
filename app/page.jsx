@@ -1,5 +1,6 @@
 "use client";
-import React from 'react';
+import { React, createContext, useState } from 'react';
+
 
 import Hero from "@/components/Hero";
 import StarryBackground from "@/components/StarryBackground";
@@ -10,9 +11,7 @@ import Experience from "@/components/Experience";
 import Social from "@/components/Social";
 import DarkModeToggle from "@/components/DarkModeToggle";
 import Projects from "@/components/Projects";
-import HaC from "@/components/HaC";
-
-import { createContext, useState } from 'react';
+import Volunteering from '@/components/Volunteering';
 
 
 export const ThemeContext = createContext(null);
@@ -33,7 +32,7 @@ const Page = () => {
         <Experience />
         <Education />
         <Projects />
-        
+        <Volunteering />        
         
       </div>
     </ThemeContext.Provider>

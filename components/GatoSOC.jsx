@@ -32,7 +32,7 @@ const GatoSOC = () => {
       <div className='rounded-[30px] p-4 bg-slate-500 bg-opacity-20 shadow-md text-black dark:text-white'>
                     <div className="flex md:flex-row flex-col">
                       <div className="md:hidden flex justify-between max-w-[99%] items-center mb-2 mt-1">
-                        <div className="text-3xl font-bold">sGatoSOC</div>
+                        <div className="text-3xl font-bold">GatoSOC</div>
                         <div className="text-lg text-gray-700 dark:text-gray-400">2024</div>
                       </div>
                         <div className="md:w-1/3 w-fullmr-4 rounded-[30px] bg-[#8997ab] dark:bg-[#323c4a] bg-opacity-60 flex flex-col justify-center hover:cursor-pointer" onClick={toggleModal}>
@@ -210,27 +210,27 @@ const GatoSOC = () => {
                       <div className="md:text-[30px] text-[27px] font-bold mb-2">Addressed Challenges</div>
                       <div className="md:text-[19px] text-[15px] text-[#9f9fa0] space-y-2">
                         <div className="flex items-center">
-                          <VscDebugBreakpointData className="text-[25px] mr-2"/> 
+                          <VscDebugBreakpointData className="text-[20px] mr-2 flex-shrink-0"/> 
                           Regulatory compliance requirements fulfilled by Wazuh for PCI DSS, HIPAA, and GDPR.
                         </div>
                         <div className="flex items-center">
-                          <VscDebugBreakpointData className="text-[25px] mr-2"/> 
+                          <VscDebugBreakpointData className="text-[20px] mr-2 flex-shrink-0"/> 
                           Incident response delays reduced with SOAR for automated responses.
                         </div>
                         <div className="flex items-center">
-                          <VscDebugBreakpointData className="text-[40px] mr-2"/> 
+                          <VscDebugBreakpointData className="text-[20px] mr-2 flex-shrink-0"/> 
                           Inefficient log visualization improved by integrating Graylog with Elasticsearch/OpenSearch for centralized management.
                         </div>
                         <div className="flex items-center">
-                          <VscDebugBreakpointData className="text-[25px] mr-2"/> 
+                          <VscDebugBreakpointData className="text-[20px] mr-2 flex-shrink-0"/> 
                           Inconsistent log formats standardized with Graylog Extended Log Format (GELF).
                         </div>
                         <div className="flex items-center">
-                          <VscDebugBreakpointData className="text-[40px] mr-2"/> 
+                          <VscDebugBreakpointData className="text-[20px] mr-2 flex-shrink-0"/> 
                           Use of Graylog&apos;s plugins and content packs from its community marketplace, with over 8,000 members, addressed community support and extensibility needs.
                         </div>
                         <div className="flex items-center">
-                          <VscDebugBreakpointData className="text-[25px] mr-2"/> 
+                          <VscDebugBreakpointData className="text-[20px] mr-2 flex-shrink-0"/> 
                           Achieved a satisfaction level of 8/10, reflecting how well our goals were accomplished.
                         </div>
                       </div>
