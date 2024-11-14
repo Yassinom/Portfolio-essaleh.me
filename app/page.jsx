@@ -12,6 +12,7 @@ import Social from "@/components/Social";
 import DarkModeToggle from "@/components/DarkModeToggle";
 import Projects from "@/components/Projects";
 import Volunteering from '@/components/Volunteering';
+import Footer from '@/components/Footer';
 
 
 export const ThemeContext = createContext(null);
@@ -32,7 +33,8 @@ const Page = () => {
         <Experience />
         <Education />
         <Projects />
-        <Volunteering />        
+        <Volunteering />     
+        <Footer />
         
       </div>
     </ThemeContext.Provider>

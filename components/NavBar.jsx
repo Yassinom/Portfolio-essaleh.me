@@ -3,6 +3,7 @@ import { FaExternalLinkAlt } from "react-icons/fa";
 import { motion } from 'framer-motion';
 import { IoHomeOutline, IoBriefcaseOutline, IoSchoolOutline  } from "react-icons/io5";
 import { TbTools, TbFriends} from "react-icons/tb";
+import { MdOutlineVolunteerActivism } from "react-icons/md";
 
 
 
@@ -49,6 +50,10 @@ const NavBar = () => {
                     <li onClick={() => window.location.href='#projects'} className='cursor-pointer px-5 py-2 hover:bg-[#b1adad] hover:bg-opacity-30 font-bold rounded-[60px]'>
                         <span className="hidden md:inline">Projects</span>
                         <span className="inline md:hidden"><TbFriends   /></span>
+                    </li>
+                    <li onClick={() => window.location.href='#volunteer'} className='cursor-pointer px-5 py-2 hover:bg-[#b1adad] hover:bg-opacity-30 font-bold rounded-[60px]'>
+                        <span className="hidden md:inline">Volunteering</span>
+                        <span className="inline md:hidden"><MdOutlineVolunteerActivism /></span>
                     </li>
                 </ul>
 

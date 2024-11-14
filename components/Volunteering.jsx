@@ -8,7 +8,7 @@ const Volunteering = () => {
     return (
         <>
             <motion.div 
-            id='volunteering' 
+            id='volunteer' 
             className='text-[40px] font-bold text-black dark:text-white mb-1 md:max-w-[60%] max-w-[90%] mx-auto mt-[50px]'
             initial={{ opacity: 0 }} 
             transition={{ duration: 0.7 }} 
@@ -62,7 +62,7 @@ const Volunteering = () => {
                 
             </div>
             
-            <div className='h-16'></div>
+            <div className='h-[300px]'></div>
 
             
        </> 
