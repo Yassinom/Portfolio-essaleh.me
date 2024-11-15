@@ -72,7 +72,7 @@ const Hero = () => {
                     </h1>
 
                     <div className="text-2xl md:text-4xl font-semibold mb-12">
-                        <span className="text-gray-700 dark:text-gray-300">I'm a</span>{' '}
+                        <span className="text-gray-700 dark:text-gray-300">I&apos;m a</span>{' '}
                         <ReactTyped
                             strings={[
                                 'Cybersecurity Engineer',
