@@ -71,7 +71,7 @@
 
 
 
-import React, { useState } from 'react';
+import { React } from 'react';
 import { FaExternalLinkAlt } from "react-icons/fa";
 import { motion } from 'framer-motion';
 import { IoHomeOutline, IoBriefcaseOutline, IoSchoolOutline } from "react-icons/io5";
@@ -79,73 +79,66 @@ import { TbTools, TbFriends } from "react-icons/tb";
 import { MdOutlineVolunteerActivism } from "react-icons/md";
 
 const NavBar = () => {
-    const [activeSection, setActiveSection] = useState('home');
-
     const navItems = [
-        { id: 'home', label: 'Home', icon: <IoHomeOutline className="text-xl" /> },
-        { id: 'skills', label: 'Skills', icon: <TbTools className="text-xl" /> },
-        { id: 'experience', label: 'Experience', icon: <IoBriefcaseOutline className="text-xl" /> },
-        { id: 'education', label: 'Education', icon: <IoSchoolOutline className="text-xl" /> },
-        { id: 'projects', label: 'Projects', icon: <TbFriends className="text-xl" /> },
-        { id: 'volunteer', label: 'Volunteering', icon: <MdOutlineVolunteerActivism className="text-xl" /> }
+        { href: '#home', label: 'Home', icon: <IoHomeOutline /> },
+        { href: '#skills', label: 'Skills', icon: <TbTools /> },
+        { href: '#experience', label: 'Experience', icon: <IoBriefcaseOutline /> },
+        { href: '#education', label: 'Education', icon: <IoSchoolOutline /> },
+        { href: '#projects', label: 'Projects', icon: <TbFriends /> },
+        { href: '#volunteer', label: 'Volunteering', icon: <MdOutlineVolunteerActivism /> },
     ];
 
-    const handleNavClick = (sectionId) => {
-        setActiveSection(sectionId);
-        window.location.href = `#${sectionId}`;
-    };
-
     return (
-        <motion.div
-            className="sticky top-5 z-50 max-w-5xl mx-auto px-4"
+        <motion.div 
+            className="sticky top-5 z-10 md:w-[60%] w-[95%] mx-auto"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
         >
-            <nav className="backdrop-blur-md bg-white/80 dark:bg-gray-900/80 rounded-2xl shadow-lg">
-                <div className="max-w-full mx-auto px-4 py-3">
-                    <div className="flex items-center justify-between">
-                        {/* Resume Button */}
-                        <motion.a
+            <div className="backdrop-blur-md bg-white dark:bg-gray-900 rounded-3xl shadow-lg">
+                <div className="flex md:items-center justify-between px-4 py-2.5">
+                    {/* Resume Button */}
+                    <motion.div 
+                        className="flex items-center md:justify-start md:my-2"
+                        whileHover={{ scale: 1.05 }}
+                    >
+                        <a 
                             href="https://drive.google.com/file/d/1why6K_0fNvK_bcborPUWfah9yFe1HzZc/view"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="flex items-center gap-2 px-4 py-2 rounded-xl bg-red-500 text-white hover:bg-red-600 transition-colors duration-300"
-                            whileHover={{ scale: 1.05 }}
-                            whileTap={{ scale: 0.95 }}
+                            className="flex items-center gap-2 bg-gradient-to-r from-red-500 to-pink-500 text-white md:px-6 px-3 py-2 rounded-full font-semibold transition-all duration-300 hover:shadow-lg"
                         >
-                            <span className="hidden md:inline font-semibold">RESUME</span>
-                            <span className="md:hidden font-semibold">CV</span>
+                            <span className="hidden md:inline">RESUME</span>
+                            <span className="md:hidden">CV</span>
                             <FaExternalLinkAlt className="text-sm" />
-                        </motion.a>
+                        </a>
+                    </motion.div>
 
-                        {/* Navigation Items */}
-                        <ul className="flex items-center gap-1 md:gap-2">
-                            {navItems.map((item) => (
-                                <motion.li
-                                    key={item.id}
+                    {/* Navigation Items */}
+                    <nav className="flex justify-center md:justify-end">
+                        <ul className="flex flex-wrap items-center gap-1 md:gap-2">
+                            {navItems.map((item, index) => (
+                                <motion.li 
+                                    key={index}
                                     whileHover={{ scale: 1.05 }}
                                     whileTap={{ scale: 0.95 }}
                                 >
-                                    <button
-                                        onClick={() => handleNavClick(item.id)}
-                                        className={`px-3 py-2 rounded-xl transition-all duration-300 flex items-center gap-2
-                                            ${activeSection === item.id 
-                                                ? 'bg-red-500 text-white' 
-                                                : 'text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800'
-                                            }`}
+                                    <a
+                                        href={item.href}
+                                        className="flex items-center px-3 py-2 rounded-xl text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors duration-200"
                                     >
+                                        <span className="hidden md:inline font-medium">{item.label}</span>
                                         <span className="md:hidden">{item.icon}</span>
-                                        <span className="hidden md:block font-medium">{item.label}</span>
-                                    </button>
+                                    </a>
                                 </motion.li>
                             ))}
                         </ul>
-                    </div>
+                    </nav>
                 </div>
-            </nav>
+            </div>
         </motion.div>
     );
-};
+}
 
 export default NavBar;
+

@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 
-import Ineos from './Ineos';
-import Cim from './Cim';
+import Ineos from '@/components/Ineos';
+import Cim from '@/components/Cim';
 
 
 

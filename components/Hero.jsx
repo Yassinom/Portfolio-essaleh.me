@@ -44,6 +44,7 @@
 
 "use client";
 
+
 import React from 'react';
 import { ReactTyped } from "react-typed";
 import { motion } from 'framer-motion';
@@ -54,7 +55,7 @@ const Hero = () => {
         <section id='home' className='min-h-screen relative'>
             {/* Background gradient overlay */}
             <div className="absolute inset-0 bg-gradient-to-b from-white via-white to-transparent dark:from-gray-900 dark:via-gray-900 dark:to-transparent" />
-            
+
             {/* Content */}
             <div className='min-h-screen flex items-center justify-center relative'>
                 <motion.div 
