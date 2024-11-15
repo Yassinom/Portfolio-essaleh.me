@@ -64,7 +64,7 @@ const Hero = () => {
                     className="max-w-4xl mx-auto px-4 text-center"
                 >
                     <h1 className="text-4xl md:text-6xl font-bold mb-6 text-gray-900 dark:text-white">
-                        Hello, I'm{' '}
+                        Hello, I&apos;m{' '}
                         <span className="bg-clip-text text-transparent bg-gradient-to-r from-red-500 to-pink-500">
                             Yassine Essaleh
                         </span>
